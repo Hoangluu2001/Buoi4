@@ -14,7 +14,7 @@ class QuadraticEquation {
     public function getRoot1(){
         $delta =( $this->b * $this->b -4 *( $this->a * $this->c ));
         if ($delta > 0) {
-         return "pt co nghiem la :" . $x1 = (-$this->b + sqrt($delta)) / 2 * $this->a  .  $x2 = (-$this->b - sqrt($delta))/2*$this->a;
+         return "pt co nghiem la :" ."X1 :" . $x1 = (-$this->b + sqrt($delta)) / 2 * $this->a ."<br>" ."X2:".  $x2 = (-$this->b - sqrt($delta))/2*$this->a;
 
         }else if ($delta==0){
             return "pt co nghiem la :" . (-$this->b + sqrt($delta)) / 2 * $this->a ;
