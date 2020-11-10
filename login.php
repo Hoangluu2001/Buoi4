@@ -5,8 +5,21 @@
     }
     fieldset {
         width: 400px;
-        margin: 0px auto;
+        margin: 0px auto; // chinhkhungragiua
         text-align: center;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+
+    }
+    form{
+        position: absolute;
+        left: 40%;
+        top : 30%;
+        border: 1px solid grey;
+        width: 50px;
+        height: 70px;
     }
 </style>
 <form method="post">
@@ -25,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $account=[["luu","2001"],["hoang","2001"]];
 
     if($email == $account[0][0] && $password == $account[0][1]){
-        header("location: QuadraticEquation.php");
+        header("location: QuadraticEquation.php"); //chuyen sang trang khac
     }else{
         echo "nhap email va password";
     }
